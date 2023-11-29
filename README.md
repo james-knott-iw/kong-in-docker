@@ -27,7 +27,7 @@ kong migrations bootstrap
 
 - This service `depends_on` the `postgres` service - this service will start up after the `postgres` service.
 - `KONG_DATABASE` set to `postgres` - specifies the type of database Kong is using.
-- `KONG_PG_HOST` set to `kong-databse` - the name of the Postgres Docker container to be configured.
+- `KONG_PG_HOST` set to `kong-database` - the name of the Postgres Docker container to be configured.
 - `KONG_PG_PASSWORD` set to `kongpass` - the `POSTGRES_PASSWORD` set in the `postgres service`.
 - `restart` set to `on-failure` - this service is only required to be run once and thus only needs to restart if it fails.
 
@@ -40,7 +40,7 @@ This service is also based on the [Kong official image](https://hub.docker.com/_
 - `restart` set to `always` - the container will always restart if stopped.
 - This service `depends_on` the `kong-bootstrap` service - this service will start up after the `kong-bootstrap` service.
 - `KONG_DATABASE` set to `postgres` - specifies the type of database Kong is using.
-- `KONG_PG_HOST` set to `kong-databse` - the name of the Postgres Docker container to be configured.
+- `KONG_PG_HOST` set to `kong-database` - the name of the Postgres Docker container to be configured.
 - `KONG_PG_USER` set to `kong` - the `POSTGRES_USER` set in the `postgres` service.
 - `KONG_PG_PASSWORD` set to `kongpass` - the `POSTGRES_PASSWORD` set in the `postgres` service.
 - All `_LOG` variables set filepaths for the logs to output to.
