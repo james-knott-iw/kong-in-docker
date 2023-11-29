@@ -70,10 +70,10 @@ Access the `/services` endpoint to confirm the whether the Admin API is availabl
 curl -i -X GET --url http://localhost:8001/services
 ```
 
+You should receive a response with a status code of `200`.
+
 Access the Kong Manager GUI:
 
 ```txt
 http://localhost:8002
 ```
-
-You should receive a response with a status code of `200`.
