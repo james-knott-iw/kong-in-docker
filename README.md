@@ -58,7 +58,7 @@ The `kong-net` network allows the containers to communicate with each other usin
 
 ## Running the Services
 
-Start the Kong Gateway:
+Configure the Postgres database and start the Kong Gateway:
 
 ```bash
 docker compose up -d
