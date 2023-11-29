@@ -50,6 +50,12 @@ This service is also based on the [Kong official image](https://hub.docker.com/_
 - Ports mappings `8001:8001` and `8444:8444` from the host's ports to container's ports - which listen for requests to the Admin API through HTTP and HTTPS, respectively.
 - Port mapping `8002:8002` maps the host's `8002` port to the container's `8002` port - which is used to listen for HTTP requests for the Kong Manager GUI.
 
+## Network
+
+## Kong-net
+
+The `kong-net` network allows the containers to communicate with each other using the service names or network aliases .This network is set as the default for all services.
+
 ## Running the Services
 
 Start the Kong Gateway:
