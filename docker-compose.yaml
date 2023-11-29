@@ -24,8 +24,6 @@ services:
   kong:
     image: kong
     restart: always
-    hostname: kong
-    container_name: kong
     depends_on:
       - kong-bootstrap
     environment:
